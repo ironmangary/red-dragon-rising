@@ -1,0 +1,24 @@
+# Ignore Python virtual environments
+rdr-env/
+
+# Ignore PyWebIO session logs (if used)
+__pywebio_session__
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore system-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore character data and other assets that shouldn't be tracked
+assets/character.json
