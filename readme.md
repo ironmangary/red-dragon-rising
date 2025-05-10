@@ -4,11 +4,11 @@
 *Red Dragon Rising* is a Python-powered RPG using PyWebIO for its interactive interface. A modern remake and tribute to *Legend of the Red Dragon* (LORD), the classic 90s BBS door game created by Seth Able Robinson, it blends nostalgic charm with fresh mechanics. Players embark on a journey through a rich fantasy world, creating their characters, exploring, and battling formidable enemies.
 
 ## Features
-- 🎮 **Interactive Character Creation** (Choose name, gender, specialty)
-- 🛡️ **Class-Based Progression** (Warrior, Mage, Rogue)
-- 🔄 **Inventory System** (Item management from `items.json`)
-- 🌍 **Exploration & Combat Mechanics** (Under development)
-- 📜 **Built entirely in Python using PyWebIO**
+- **Interactive Character Creation** (Choose name, gender, specialty)
+- **Class-Based Progression** (Warrior, Assassin, Tief)
+- **Inventory System** (Item management from `items.json`)
+- **Exploration & Combat Mechanics** (Under development)
+- **Built entirely in Python using PyWebIO**
 
 ## Installation
 1. Clone the repository:

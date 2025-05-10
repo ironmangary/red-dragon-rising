@@ -4,7 +4,7 @@ from pywebio.output import put_buttons, put_text, put_markdown, put_html, clear,
 from pywebio.input import input, radio, select, actions
 from lib.character import set_char_stat
 import os
-from lib.navigation import go_main_menu, go_resume_game
+from lib.goto import goto
 
 def create_character(name, gender, specialty):
     set_char_stat("name", name)
@@ -21,11 +21,14 @@ def create_character(name, gender, specialty):
     set_char_stat("charm", 0)
     set_char_stat("gold_hand", 50)
     set_char_stat("gold_bank", 0)
+    set_char_stat("gems_hand", 0)
+    set_char_stat("gems_bank", 0)
     set_char_stat("weapon", 101)  # Default weapon (Fists)
     set_char_stat("armor", 201)   # Default armor (T-Shirt)
     set_char_stat("horse", 0)   # No horse by default
+    set_char_stat("status", "awake")
     set_char_stat("healing_potions", 1)
-    set_char_stat("days", 0)
+    set_char_stat("killed", 0)
     set_char_stat("kills", 0)
     
     # Successful character creation
@@ -35,7 +38,7 @@ def create_character(name, gender, specialty):
     put_text("Now what do you want to do?")
 
     put_buttons(["Start Playing", "Return to Main Menu"], 
-        onclick=[go_resume_game, go_main_menu])
+        onclick=[lambda: goto("resume_game"), lambda: goto("main_menu")])
 
 def new_game():
     # Check if character.json exists

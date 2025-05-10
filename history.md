@@ -5,6 +5,12 @@ Red Dragon Rising is an interactive RPG built with Python and PyWebIO. This file
 
 ## v1.0 Alpha
 
+### v1.0 Alpha 3 (05/10/2025)
+- Wrote a scalable **navigation system** based on **Python dictionary lists**.
+- Implemented the skeleton for the **Town Square**.
+- Created a **View Stats** screen, tracking **general stats**, **inventory**, and **miscellaneous stats**.
+- Added **Ye Old Bank** basics, which currently allows characters to deposit or withdrawl **gold** and **gems**.
+
 ### v1.0 Alpha 2 (04/25/2025)
 - **Migrated from Streamlit to PyWebIO** for better UI flexibility.
 - Rebuilt **main menu & new game pages** with PyWebIO's dynamic interactions.

@@ -1,4 +1,4 @@
-# Equipment and item handling functions
+# Equipment and item handling functions for Red Dragon Rising
 
 import json
 

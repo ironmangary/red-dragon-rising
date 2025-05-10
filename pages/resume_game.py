@@ -1,8 +1,16 @@
-# Resume Game
+# Resume Game for Red Dragon Rising
 
-from pywebio.output import put_buttons, put_text, put_markdown, put_html, clear, toast
-from pywebio.input import input, radio, select, actions
+from lib.character import get_char_stat
+from lib.goto import goto
+from pywebio.output import put_buttons, put_text, clear
 
 def resume_game():
-    put_text("This feature is not yet implemented.")
+    if get_char_stat("awake") == "dead":
+        put_text("You are alive again.")
+        put_buttons(["Continue"], onclick=[lambda: goto("main_menu")])
+    elif get_char_stat("status") == "asleep_inn":
+        put_text("You are sleeping at the Knight Fall Inn.")
+        put_buttons(["Continue"], onclick=[lambda: goto("main_menu")])
+    else: 
+        goto("town_square")
     
